@@ -1,4 +1,4 @@
-## ⚠ ALERT, FRAMES ARE IN .txt, WEIGHTING OVER 100MB ⚠
+## ⚠ ALERT, FRAMES ARE IN .txt, WEIGHTING ABOUT ~100MB AND CAN BE VERY LAGGY ⚠
 
 # **Bad Apple in Python** <br> <br> How to run
 
