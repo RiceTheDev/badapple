@@ -1,8 +1,7 @@
-# ⚠ ALERT, FRAMES ARE IN .txt, WEIGHTING OVER 100MB ⚠
+## ⚠ ALERT, FRAMES ARE IN .txt, WEIGHTING OVER 100MB ⚠
 
-**Bad Apple in Python**
+# **Bad Apple in Python** <br> <br> How to run
 
-## How to run
 ### Linux (You need to have python installed)
 #### Run this folowing lines:
 #### ```chmod +x run.sh ``` <br> ```run.sh```
