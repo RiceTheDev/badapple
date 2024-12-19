@@ -19,7 +19,7 @@ def showVideo():
     global frame
     threading.Thread(target=playAudio).start()
     for x in range(13140): # 13,140 frames 
-        time.sleep(0.01667)
+        time.sleep(0.01500)
         os.system('clear') # Clears the screen, change to "cls" if you are on Windows.
         print(open(f"frames/frame_{frame}.txt").read()) # Prints the current frame
         frame += 1
