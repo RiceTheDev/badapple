@@ -1,27 +1,26 @@
-"""
----------- Bad Apple, but in Python ----------
-*   To run it, just use the "run.sh" or "run.bat"
-    Not the most optimized code, but works!    
-----------------------------------------------
-"""
-
 import time
-import os
-from playsound3 import playsound # To install the requirements, run "run.sh" or "run.bat"
 import threading
+from playsound3 import playsound
+
+with open("frames.txt", "r", encoding="utf-8") as f:
+    data = f.read()
+
+frameList = data.split("\n---FRAME---\n")
 
 def playAudio():
-    playsound('badapple.mp3') # Plays the music
-
-frame = 0
+    playsound("badapple.mp3")
 
 def showVideo():
-    global frame
-    threading.Thread(target=playAudio).start()
-    for x in range(13140): # 13,140 frames 
-        time.sleep(0.01667)
-        os.system('clear') # Clears the screen, change to "cls" if you are on Windows.
-        print(open(f"frames/frame_{frame}.txt").read()) # Prints the current frame
-        frame += 1
+    start_time = time.time()
+    threading.Thread(target=playAudio, daemon=True).start()
 
-threading.Thread(target=showVideo).start()
+    for i, frame in enumerate(frameList):
+        target = start_time + i * (1/60)
+        now = time.time()
+
+        if target > now:
+            time.sleep(target - now)
+
+        print(frame, end="")
+
+showVideo()

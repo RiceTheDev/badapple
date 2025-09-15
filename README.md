@@ -1,6 +1,7 @@
-## ⚠ ALERT, FRAMES ARE IN .txt, WEIGHTING ABOUT ~100MB AND CAN BE VERY LAGGY ⚠
+## ⚠ ALERT, FRAMES ARE IN .txt, WEIGHTING ABOUT ~60MB AND CAN BE VERY LAGGY ⚠ <br> All credits to Alstroemeria Records featuring nomico
 
-# **Bad Apple in Python** <br> <br> How to run
+
+# **Bad Apple in Python** <br><br> How to run
 
 ### Linux (You need to have python installed)
 #### Run this folowing lines:
@@ -8,6 +9,3 @@
 ### Windows (You need to have python installed)
 #### Run this folowing lines:
 #### ```run.bat```
-
-
-
